@@ -18,12 +18,16 @@ const ItemCounter = ({ initial, max, onAdd }) => {
 
   return (
     <article id='ItemCounter'>
+      <h2>ItemCounter</h2>
+
       {counter}
       <button onClick={handleDecrement}>decrement</button>
 
       <button onClick={handleIncrement}>increment</button>
 
       <button onClick={handleAdd}>agregar {counter}</button>
+
+      <hr />
     </article>
   )
 }

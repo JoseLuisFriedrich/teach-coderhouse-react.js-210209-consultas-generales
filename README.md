@@ -9,13 +9,13 @@ https://youtu.be/2KO6ktDCxPI
 
 00:00:00 ✔️ Relación entre componentes / estructura de carpetas
 
-00:00:10 ✔️ Firebase get todos los registros / por categoría -> where / por id -> doc(id)
+00:10:00 ✔️ Firebase get todos los registros / por categoría -> where / por id -> doc(id)
 
-00:00:28 ✔️ Callback por props onAdd ItemCount
+00:28:00 ✔️ Callback por props onAdd ItemCount
 
-00:00:40 ✔️ Callback por props onFormValidated UserForm / UserForm
+00:40:00 ✔️ Callback por props onFormValidated UserForm / UserForm
 
-00:00:50 ✔️ Añadir / Eliminar datos de array / manejar objetos complejos
+00:50:00 ✔️ Añadir / Eliminar datos de array / manejar objetos complejos
 
 01:15:00 ✔️ PokemonContext
 

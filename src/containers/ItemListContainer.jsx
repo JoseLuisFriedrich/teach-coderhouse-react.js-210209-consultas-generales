@@ -19,7 +19,7 @@ const ItemListContainer = () => {
 
       const data = response.docs.map(doc => ({ ...doc.data(), id: doc.id }))
       // data.filter()
-      console.table(data)
+      console.table('itemlistcontainer', data)
     })
 
     //traer de firebase
@@ -29,7 +29,7 @@ const ItemListContainer = () => {
 
   return (
     <section id='ItemListContainer'>
-      <h2>ItemListContainer</h2>
+      <h2>ItemListContainer (ver consola)</h2>
     </section>
   )
 }

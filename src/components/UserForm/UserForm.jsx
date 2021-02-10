@@ -14,10 +14,12 @@ const UserForm = ({ onValidateUser }) => {
 
   return (
     <article id='UserForm'>
+      <h2>UserForm (ver consola)</h2>
       <input onInput={handleInputChange} type='text' name='name' id='' />
       <input onInput={handleInputChange} type='text' name='mail1' id='' />
       <input onInput={handleInputChange} type='text' name='mail2' id='' />
       <input onInput={handleInputChange} type='text' name='phone' id='' />
+      <hr />
     </article>
   )
 }

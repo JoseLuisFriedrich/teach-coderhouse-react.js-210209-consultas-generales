@@ -7,7 +7,7 @@ import { PokemonProvider } from 'context/PokemonContext'
 const App = () => {
   return (
     <PokemonProvider>
-      <ItemDetail item={{ id: 3, name: 'Squirtle' }} />
+      {/* <ItemDetail item={{ id: 3, name: 'Squirtle' }} /> */}
       <Cart />
       <ItemListContainer />
       <ItemDetailContainer />
@@ -16,7 +16,15 @@ const App = () => {
 }
 export default App
 
-//https://github.com/JoseLuisFriedrich/
+// https://github.com/JoseLuisFriedrich/
+
+// 00:00 ✔️ Relación entre componentes / estructura de carpetas
+// 00:10 ✔️ Firebase get todos los registros / por categoría -> where / por id -> doc(id)
+// 00:28 ✔️ Callback por props onAdd ItemCount
+// 00:40 ✔️ Callback por props onFormValidated UserForm / UserForm
+// 00:50 ✔️ Añadir / Eliminar datos de array / manejar objetos complejos
+// 01:15 ✔️ PokemonContext
+// 01:40 ✔️ Consulta proyecto de alumno (faltaba return en funciones, consultar mal propiedad de objeto)
 
 // App
 //    NavBar
@@ -28,17 +36,6 @@ export default App
 
 //    ItemDetailContainer (buscamos dato (objetos) -> promesa  / firebase)
 //        ItemDetail (producto)
-//            ItemCount (cantidad ej12)
-//              catn12
+//            ItemCount (cantidad ej12 subir a itemcount)
 
 //    Cart
-
-
-
-// 00:00 00:10 ✔️ Relación entre componentes / estructura de carpetas
-// 00:10 00:28 ✔️ Firebase get todos los registros / por categoría -> where / por id -> doc(id)
-// 00:28 00:40 ✔️ Callback por props onAdd ItemCount
-// 00:40 00:50 ✔️ Callback por props onFormValidated UserForm / UserForm
-// 00:50 01:15 ✔️ Añadir / Eliminar datos de array / manejar objetos complejos
-// 01:15 01:40 ✔️ PokemonContext
-// 01:40 01:54 ✔️ Consulta proyecto de alumno (faltaba return en funciones, consultar mal propiedad de objeto)

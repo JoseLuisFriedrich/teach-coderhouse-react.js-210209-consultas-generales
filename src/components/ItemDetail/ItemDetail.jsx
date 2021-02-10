@@ -26,15 +26,20 @@ const ItemDetail = ({ item }) => {
   //se pasan funciones a hijos si quiere "subir" un valor del hijo al padre
   const handleCounter = counter => {
     setCounter(counter)
+    alert('soy item detail con ' + counter)
   }
 
   return (
     <article id='ItemDetail'>
+      <h2>ItemDetail</h2>
+
+      <button onClick={handleAdd1}>agregar poke1</button>
+      <button onClick={handleAdd2}>agregar poke2</button>
+      <button onClick={handleDelete}>del poke2</button>
+
       <ItemCounter initial={1} max={5} onAdd={handleCounter} />
 
-      <button onClick={handleAdd1}>agregar product1</button>
-      <button onClick={handleAdd2}>agregar product2</button>
-      <button onClick={handleDelete}>del product2</button>
+      <hr />
     </article>
   )
 }

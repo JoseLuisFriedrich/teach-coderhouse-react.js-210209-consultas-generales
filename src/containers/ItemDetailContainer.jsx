@@ -10,22 +10,21 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     //código firebase, usen el filtro de firebase, no usen filter
-    //
-
+    //filtro id
     const query = getFirestore().collection('items').doc(itemId)
 
     query.get().then(response => {
-      if (response.size === 0) console.log('empty')
+      if (!response.exists) console.log('empty')
 
       const data = { ...response.data(), id: response.id }
-      console.table(data)
+      console.table('itemdetailcontainer', data)
       setItem(data)
     })
   }, [])
 
   return (
     <section id='ItemDetailContainer'>
-      <ItemDetail item={item} />
+      <ItemDetail item={{ id: 2, name: 'Squirtle' }} /> {/* item={item} */}
     </section>
   )
 }

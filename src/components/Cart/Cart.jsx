@@ -20,9 +20,13 @@ const Cart = () => {
 
   return (
     <article id='Cart'>
+      <h2>Cart</h2>
+
       {pokemons.map((p, idx) => (
-        <h1 key={idx}>{p.pokemon.name}</h1>
+        <h1 key={idx}>{`> ${p.pokemon.id} ${p.pokemon.name}`}</h1>
       ))}
+
+      <hr />
 
       <UserForm onValidateUser={handleUser} />
     </article>
