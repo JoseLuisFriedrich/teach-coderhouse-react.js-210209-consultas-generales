@@ -8,8 +8,8 @@ const UserForm = ({ onValidateUser }) => {
     //validar
     console.log(e.target.name, e.target.value)
 
-    //si está validado? setUser({name: 'pepe', mail:'@', phone: '+54911'})
-    //onValidateUser({name: 'pepe', mail:'@', phone: '+54911'})
+    //si está validado? setUser({name: 'pepe', mail:'@', phone: '+54911'}) (o 3 states)
+    //onValidateUser(state)
   }
 
   return (
