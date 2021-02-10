@@ -3,7 +3,6 @@ import ItemDetail from 'components/ItemDetail/ItemDetail'
 import ItemDetailContainer from 'containers/ItemDetailContainer'
 import ItemListContainer from 'containers/ItemListContainer'
 import { PokemonProvider } from 'context/PokemonContext'
-import React from 'react'
 
 const App = () => {
   return (
